@@ -5,13 +5,13 @@ def guess_number(x):
   guess = 0
 
   while guess != random_number:
-    guess = int(input(f"Pick a number between 1 and {x}"))
+    guess = int(input(f"Pick a number between 1 and {x}: "))
     if guess > random_number:
-      print("Your number is too high! Guess again.")
+      print("Your number is too high! Guess again: ")
     elif guess < random_number:
-      print("Your number is too low! Guess again.")
+      print("Your number is too low! Guess again: ")
 
-  print("You got it!")
+  print(f"Congratulations! You got the number {random_number} correctly!")
 
 
 guess_number(10)
