@@ -16,7 +16,9 @@ def play():
 
 
 def is_win(player, opponent):
-  return False
+  if (player == 'r' and opponent == 's') or (player == 'p' and opponent == 'r') or (player == 's' and opponent == 'p'):
+    return True
+
 
 
 play()
