@@ -41,4 +41,6 @@ def hangman():
 
     else:
       print('Please enter a valid character!')
+
+  print(f'Congrats! You figured out the word {word}')
 hangman()
