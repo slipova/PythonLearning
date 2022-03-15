@@ -6,7 +6,17 @@ def play():
 
   if user == computer:
     print('It\'s a tie!')
+    return
 
-  print('It\'s not a tie!')
+  if is_win(user, computer):
+    print('You won!')
+    return
+
+  print('You lost!')
+
+
+def is_win(player, opponent):
+  return False
+
 
 play()
