@@ -15,9 +15,15 @@ def hangman():
   word = get_valid_word(words)
   word_letters = set(word)
   alphabet = set(string.ascii_uppercase)
+# a collection of letters from user guesses
+  used_letters = set()
 
-  print(word_letters)
-  print(alphabet)
+  # get user input and save it into a variable
+  user_letter = input('Guess a letter: ').upper()
 
+  # if user_letter in alphabet and user_letter not in used_letters:
+  if user_letter in alphabet - used_letters:
+    used_letters.add(user_letter)
+    
 
 hangman()
